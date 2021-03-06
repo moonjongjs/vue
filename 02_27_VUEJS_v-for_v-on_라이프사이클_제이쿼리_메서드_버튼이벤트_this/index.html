@@ -33,7 +33,11 @@
     <!-- 스크립트 영역 -->
     <script>
 
+<<<<<<< HEAD
         var header = new Vue({ //뷰의 인스턴스 생성
+=======
+        const header = new Vue({ //뷰의 인스턴스 생성
+>>>>>>> 0e0360bf0ee9126c52fb40326ff62bb4267354ee
             el:'#header',
             data:{
                 msg : '뷰 인스턴스 데이터 메시지',
@@ -65,7 +69,11 @@
                 console.log('뷰 생명주기 beforeMounte');
             },
             mounted:function(){
+<<<<<<< HEAD
                 var that = this; //인스턴스 객체이름
+=======
+                let that = this; //인스턴스 객체이름
+>>>>>>> 0e0360bf0ee9126c52fb40326ff62bb4267354ee
 
                 console.log('뷰 생명주기 mounted  제이쿼리와 라이브러등 사용 가능 합니다.');
 
@@ -83,6 +91,7 @@
                     }
                 });
 
+<<<<<<< HEAD
                 $('.h1-btn').each(function(idx){
                     $(this).on({
                         click:function(){
@@ -95,6 +104,8 @@
 
 
 
+=======
+>>>>>>> 0e0360bf0ee9126c52fb40326ff62bb4267354ee
                 // $('.h1-btn')
                 // .on('click', function(){
                 //     alert('제이쿼리 클릭 이벤트'); 
@@ -117,7 +128,11 @@
             beforeDestory:function(){
                 console.log('뷰 생명주기 beforeDestory');
             },
+<<<<<<< HEAD
             destroyed:function(){ //디스트로이  소멸(삭제===파괴)
+=======
+            destroyed:function(){
+>>>>>>> 0e0360bf0ee9126c52fb40326ff62bb4267354ee
                 console.log('뷰 생명주기 destroyed');
             }
         });
